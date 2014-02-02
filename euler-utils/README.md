@@ -1,13 +1,3 @@
 # euler-utils
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
+A Clojure library designed to provide useful utilities for solving Project Euler problems
