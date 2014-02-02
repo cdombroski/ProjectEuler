@@ -1,6 +1,6 @@
-(ns euler01.core-test
+(ns org.icanttype.euler01.core-test
   (:use midje.sweet
-        euler01.core))
+        org.icanttype.euler01.core))
 
 (facts "sum multiples of 3 and 5 below a limit"
        (fact
