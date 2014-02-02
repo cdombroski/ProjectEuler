@@ -4,6 +4,8 @@
     <option name="projectFiles">
       <list>
         <option value="file://$PROJECT_DIR$/euler01/project.clj" />
+        <option value="file://$PROJECT_DIR$/euler02/project.clj" />
+        <option value="file://$PROJECT_DIR$/euler-utils/project.clj" />
       </list>
     </option>
   </component>
