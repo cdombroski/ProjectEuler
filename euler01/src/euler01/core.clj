@@ -1,9 +1,12 @@
 (ns euler01.core
   (:gen-class))
 
+(defn sum-multiples-3-or-5 [limit]
+  (->> limit
+       (range)
+       (filter #(or (zero? (mod % 5)) (zero? (mod % 3))))
+       (apply +)))
+
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
-  ;; work around dangerous default behaviour in Clojure
-  (alter-var-root #'*read-eval* (constantly false))
-  (println "Hello, World!"))
+  (println (sum-multiples-3-or-5 1000)))

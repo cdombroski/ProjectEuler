@@ -1,7 +1,9 @@
 (ns euler01.core-test
-  (:use clojure.test
+  (:use midje.sweet
         euler01.core))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(facts "sum multiples of 3 and 5 below a limit"
+       (fact
+         (sum-multiples-3-or-5 10) => 23)
+       (fact
+         (sum-multiples-3-or-5 1000) => 233168))
