@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/euler01/euler01.iml" filepath="$PROJECT_DIR$/euler01/euler01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euler02/euler02.iml" filepath="$PROJECT_DIR$/euler02/euler02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euler-utils/euler_utils.iml" filepath="$PROJECT_DIR$/euler-utils/euler_utils.iml" />
     </modules>
   </component>
 </project>
