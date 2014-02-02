@@ -1,4 +1,4 @@
-(ns euler01.core
+(ns org.icanttype.euler01.core
   (:gen-class))
 
 (defn sum-multiples-3-or-5 [limit]
