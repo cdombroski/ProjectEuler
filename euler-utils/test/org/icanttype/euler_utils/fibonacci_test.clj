@@ -1,4 +1,4 @@
-(ns org.icanttype.euler_utils.core_test
+(ns org.icanttype.euler_utils.fibonacci_test
   (:use midje.sweet
         org.icanttype.euler_utils.fibonacci))
 
