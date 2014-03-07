@@ -1,4 +1,4 @@
-(ns org.icanttype.euler_utils.prime)
+(ns org.icanttype.euler-utils.prime)
 
 (defn sieve
   ([] (sieve (iterate inc' 2) []))

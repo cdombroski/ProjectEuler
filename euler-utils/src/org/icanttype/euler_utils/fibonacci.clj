@@ -1,4 +1,4 @@
-(ns org.icanttype.euler_utils.fibonacci)
+(ns org.icanttype.euler-utils.fibonacci)
 
 (defn fibonacci
   ([] (fibonacci 0 1))
