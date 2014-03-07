@@ -1,6 +1,6 @@
 (ns org.icanttype.euler02.core
   (:gen-class)
-  (:require [org.icanttype.euler_utils.fibonacci :refer :all]))
+  (:require [org.icanttype.euler-utils.fibonacci :refer :all]))
 
 (defn sum-even-fibonacci-numbers [limit]
   (->> (fibonacci 1 2)

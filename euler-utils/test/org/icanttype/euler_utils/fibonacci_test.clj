@@ -1,6 +1,6 @@
-(ns org.icanttype.euler_utils.fibonacci_test
+(ns org.icanttype.euler-utils.fibonacci-test
   (:use midje.sweet
-        org.icanttype.euler_utils.fibonacci))
+        org.icanttype.euler-utils.fibonacci))
 
 (facts "Fibonacci sequence"
        (fact "First 10 terms of fibonacci are 0 1 1 2 3 5 8 13 21 34"
