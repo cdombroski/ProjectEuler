@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/euler01/euler01.iml" filepath="$PROJECT_DIR$/euler01/euler01.iml" />
       <module fileurl="file://$PROJECT_DIR$/euler02/euler02.iml" filepath="$PROJECT_DIR$/euler02/euler02.iml" />
       <module fileurl="file://$PROJECT_DIR$/euler03/euler03.iml" filepath="$PROJECT_DIR$/euler03/euler03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euler04/euler04.iml" filepath="$PROJECT_DIR$/euler04/euler04.iml" />
       <module fileurl="file://$PROJECT_DIR$/euler-utils/euler_utils.iml" filepath="$PROJECT_DIR$/euler-utils/euler_utils.iml" />
     </modules>
   </component>
