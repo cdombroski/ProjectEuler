@@ -1,13 +1,5 @@
 # euler04
 
-A Clojure library designed to ... well, that part is up to you.
+A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
+Find the largest palindrome made from the product of two 3-digit numbers.
