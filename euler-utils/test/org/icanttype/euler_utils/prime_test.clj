@@ -1,6 +1,6 @@
-(ns org.icanttype.euler_utils.prime_test
+(ns org.icanttype.euler-utils.prime_test
   (:use midje.sweet
-        org.icanttype.euler_utils.prime))
+        org.icanttype.euler-utils.prime))
 
 (facts "prime sequence"
        (fact "First 5 primes are 2 3 5 7 11"
