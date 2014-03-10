@@ -1,6 +1,6 @@
-(ns org.icanttype.euler05.core)
+(ns org.icanttype.euler05.core
+  (:require [org.icanttype.euler-utils.factor :refer [lcm]])
+  (:gen-class))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn -main [& args]
+  (println (apply lcm (range 1 21))))
