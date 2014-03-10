@@ -26,3 +26,31 @@
     (prime-factor 8); => {2 3}
     (prime-factor 15); => {3 1, 5 1}
     ```
+
+## org.icanttype.euler-utils.factor
+
+*    ```clojure
+     (gcd x)
+     (gcd x y)
+     (gcd x y & more)
+     ```
+
+     Computes the greatest common denominator of 1 or more numbers:
+     ```clojure
+     (gcd x); => |x|
+     (gcd x 0); => |x|
+     (gcd x y z); => (gcd (gcd x y) z)
+     ```
+
+*    ```clojure
+     (lcm x)
+     (lcm x y)
+     (lcm x y z)
+     ```
+
+     Computes the least common multiple of 1 or more numbers:
+     ```clojure
+     (lcm x); => |x|
+     (lcm 0 0); => special case: 0
+     (lcm x y); => (* (/ |x| (gcd x y)) |y|)
+     (lcm x y z); => (* (/ |x| (gcd x y z)) |y| |z|)
