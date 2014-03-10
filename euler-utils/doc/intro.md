@@ -53,4 +53,4 @@
      (lcm x); => |x|
      (lcm 0 0); => special case: 0
      (lcm x y); => (* (/ |x| (gcd x y)) |y|)
-     (lcm x y z); => (* (/ |x| (gcd x y z)) |y| |z|)
+     (lcm x y z); => (lcm (lcm x y) z)

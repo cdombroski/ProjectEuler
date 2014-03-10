@@ -25,4 +25,4 @@
    (if (= 0 x y)
      0
      (*' (/ (math/abs x) (gcd x y)) (math/abs y))))
-  ([x y & more] (apply *' (/ (math/abs x) (apply gcd x y more)) (map math/abs (cons y more)))))
+  ([x y & more] (reduce lcm x (cons y more))))
