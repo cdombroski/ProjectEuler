@@ -8,5 +8,7 @@
 
 (defn lcm
   ([x] (math/abs x))
-  ([x y] (*' (/ (math/abs x) (gcd x y)) (math/abs y)))
-  ([x y & more] (*' (/ (math/abs x) (apply gcd x (cons y more))) (map math/abs (cons y more)))))
+  ([x y] (if (= 0 x y)
+           0
+           (*' (/ (math/abs x) (gcd x y)) (math/abs y))))
+  ([x y & more] (apply *' (/ (math/abs x) (apply gcd x y more)) (map math/abs (cons y more)))))
