@@ -7,4 +7,4 @@
                  [org.icanttype/euler-utils "0.3.0"]]
   :profiles {:dev {:plugins      [[lein-midje "3.1.1"]]
                    :dependencies [[midje "1.6.0"]]}}
-  :main org.icanttype.euler06.core)
+  :main org.icanttype.euler07.core)
