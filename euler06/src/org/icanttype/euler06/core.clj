@@ -1,6 +1,7 @@
 (ns org.icanttype.euler06.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn square [x] (* x x))
+
+(defn sum-of-square [nums])
+
+(defn square-of-sum [nums])

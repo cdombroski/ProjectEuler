@@ -1,7 +1,17 @@
 (ns org.icanttype.euler06.core-test
-  (:use clojure.test
+  (:use midje.sweet
         org.icanttype.euler06.core))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(facts "Euler06"
+       (fact "Example problem"
+             (- (square-of-sum (range 1 11)) (sum-of-square (range 1 11))) => 2640))
+
+(fact "sum-of-square"
+      (sum-of-square (range 1 11)) => 385)
+
+(fact "square-of-sum"
+      (square-of-sum (range 1 11)) => 3025)
+
+(fact "Square"
+      (square 2) => 4
+      (square -2) => 4)
