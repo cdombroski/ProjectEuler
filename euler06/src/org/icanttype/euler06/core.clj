@@ -1,4 +1,4 @@
-(ns euler06.core)
+(ns org.icanttype.euler06.core)
 
 (defn foo
   "I don't do a whole lot."
