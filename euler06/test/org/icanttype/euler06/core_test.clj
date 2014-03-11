@@ -4,7 +4,9 @@
 
 (facts "Euler06"
        (fact "Example problem"
-             (- (square-of-sum (range 1 11)) (sum-of-square (range 1 11))) => 2640))
+             (- (square-of-sum (range 1 11)) (sum-of-square (range 1 11))) => 2640)
+       (fact "Problem solution"
+             (- (square-of-sum (range 1 101)) (sum-of-square (range 1 101))) => 25164150))
 
 (fact "sum-of-square"
       (sum-of-square (range 1 11)) => 385)
