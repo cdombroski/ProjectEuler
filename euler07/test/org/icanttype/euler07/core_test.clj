@@ -1,7 +1,7 @@
 (ns org.icanttype.euler07.core-test
-  (:require [clojure.test :refer :all]
-            [org.icanttype.euler07.core :refer :all]))
+  (:require [midje.sweet :refer :all]
+            [org.icanttype.euler-utils.prime :refer [sieve]]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(facts "Euler 07"
+       (fact "Example problem"
+             (nth (sieve) 5) => 13))
