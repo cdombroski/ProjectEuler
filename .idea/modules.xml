@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/euler04/euler04.iml" filepath="$PROJECT_DIR$/euler04/euler04.iml" />
       <module fileurl="file://$PROJECT_DIR$/euler05/euler05.iml" filepath="$PROJECT_DIR$/euler05/euler05.iml" />
       <module fileurl="file://$PROJECT_DIR$/euler06/euler06.iml" filepath="$PROJECT_DIR$/euler06/euler06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euler07/euler07.iml" filepath="$PROJECT_DIR$/euler07/euler07.iml" />
       <module fileurl="file://$PROJECT_DIR$/euler-utils/euler_utils.iml" filepath="$PROJECT_DIR$/euler-utils/euler_utils.iml" />
     </modules>
   </component>
