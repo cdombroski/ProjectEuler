@@ -1,21 +1,28 @@
 (ns org.icanttype.euler-utils.prime)
 
-(defn sieve
-  ([] (sieve (iterate inc' 2) []))
-  ([candidates prime-multiples]
-   (if (seq prime-multiples)
-     (if (< (first candidates) (first (first prime-multiples)))
-       (let [prime (first candidates)]
-         (cons prime (lazy-seq (sieve (rest candidates) (sort-by first (conj prime-multiples (iterate (partial + prime) (* prime prime))))))))
-       (if (= (first candidates) (first (first prime-multiples)))
-           (recur (rest candidates) (sort-by first (conj (rest prime-multiples) (rest (first prime-multiples)))))
-           (recur candidates (sort-by first (conj (rest prime-multiples) (rest (first prime-multiples)))))))
-     (cons 2 (lazy-seq (sieve (rest candidates) [(iterate (partial + 2) 4)]))))))
+(defn sieve [limit]
+  (loop [found-primes []
+         candidates (range 2 (inc limit))]
+    (if (seq candidates)
+      (recur
+        (conj found-primes (first candidates))
+        (doall (remove #(zero? (mod % (first candidates))) candidates)))
+      found-primes)))
+
+(def primes
+  (cons 2 (lazy-seq ((fn primes-gen [candidates count]
+                       (loop [candidate (first candidates)
+                              more (rest candidates)]
+                         (if (some zero? (map (partial mod candidate) (take count primes)))
+                           (recur (first more) (rest more))
+                           (cons candidate (lazy-seq (primes-gen more (inc count)))))))
+                     (iterate (partial + 2) 3)
+                     1))))
 
 (defn prime-factor [n]
   (loop [number n
          factors {}
-         primes (sieve)]
+         primes primes]
     (if (<= (first primes) number)
       (if (zero? (mod number (first primes)))
         (recur (/ number (first primes))

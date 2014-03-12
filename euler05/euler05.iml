@@ -14,8 +14,8 @@
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.3" level="project" />
     <orderEntry type="library" name="Leiningen: midje:1.6.0" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.5.1" level="project" />
-    <orderEntry type="library" name="Leiningen: org.clojure/math.numeric-tower:0.0.4" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.3" level="project" />
+    <orderEntry type="library" name="Leiningen: org.icanttype/euler-utils:0.3.0" level="project" />
     <orderEntry type="library" name="Leiningen: bultitude:0.2.2" level="project" />
     <orderEntry type="library" name="Leiningen: clj-time:0.6.0" level="project" />
     <orderEntry type="library" name="Leiningen: colorize:0.1.1" level="project" />
@@ -34,7 +34,7 @@
     <orderEntry type="library" name="Leiningen: net.cgrand/parsley:0.9.1" level="project" />
     <orderEntry type="library" name="Leiningen: net.cgrand/regex:1.1.0" level="project" />
     <orderEntry type="library" name="Leiningen: joda-time:2.0" level="project" />
-    <orderEntry type="module" module-name="euler_utils" />
+    <orderEntry type="library" name="Leiningen: org.clojure/math.numeric-tower:0.0.4" level="project" />
   </component>
 </module>
 
