@@ -4,4 +4,6 @@
 
 (facts "Euler 07"
        (fact "Example problem"
-             (nth primes 5) => 13))
+             (nth primes 5) => 13)
+       (fact "Problem solution"
+             (nth primes 10000) => 104743))
